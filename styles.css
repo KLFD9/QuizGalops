@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,700;0,900;1,100;1,300;1,700&display=swap");
+
+body {
+  /* ... (vos autres styles) */
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#question-container {
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#question {
+  font-size: 1.5em;
+}
+
+h1 {
+  font-size: 4em;
+  margin-bottom: -25px;
+  color: #e74c3c;
+}
+
+h3 {
+  font-size: 1em;
+  margin-bottom: 15px;
+  color: #7a7a7a;
+  font-weight: 300;
+  letter-spacing: 0.9px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px;
+}
+
+.options button {
+  background-color: #e6e6e6;
+  border: none;
+  border-radius: 5px;
+  padding: 30px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #1a1a1a;
+  font-weight: bold;
+  font-size: large;
+}
+
+.options button:hover {
+  background-color: #b1e93a;
+}
+
+#result {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+#retry-button {
+  display: block;
+  margin: 20px auto;
+  padding: 30px 50px;
+  background-color: #007bff; /* Couleur de fond du bouton */
+  color: #fff; /* Couleur du texte du bouton */
+  border: none;
+  border-radius: 4px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#retry-button:hover {
+  background-color: #0056b3; /* Couleur de fond du bouton au survol */
+}
+
+#quiz-result {
+  display: none;
+  text-align: center;
+  margin-top: 30px;
+  padding: 40px;
+  background-color: #c7fba6;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
+
+#quiz-result em {
+  color: #008000; /* Couleur pour les bonnes réponses */
+}
+
+#quiz-result span {
+  color: #f65353; /* Couleur pour les mauvaises réponses */
+}
+
+#remaining-questions {
+  font-size: 1.3em;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lives-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.lives-container i {
+  font-size: 35px;
+  color: red;
+  margin: 0 5px;
+}

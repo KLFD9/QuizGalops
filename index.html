@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz sur les équidés</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz Galops</h1>
+        <h3>Montez en Selle, Testez Vos Connaissances!</h3>
+        <div id="question-container">
+            
+            <p id="result"></p>
+            <p id="question">Question ici</p>
+
+            <div class="options">
+                <!-- Options de réponses -->
+            </div>
+           
+            
+        </div>
+        <div id="quiz-result" style="display: none;"></div>
+            <button id="retry-button" onclick="retryQuiz()" style="display: none;">Réessayer</button>
+        <div id="remaining-questions">Questions restantes: 0</div>       
+        
+    </div>
+    <div id="lives-container" class="lives-container">
+        <div class="heart">&#10084;</div>
+        <div class="heart">&#10084;</div>
+        <div class="heart">&#10084;</div>
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>
